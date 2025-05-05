@@ -1,0 +1,19 @@
+
+git clone https://github.com/jsscsca/streamlit.git
+cd streamlit
+
+
+git checkout -b connect-to-streamlit
+
+# Add your Streamlit app file
+touch streamlit_app.py  # or copy your existing script into the repo
+
+# (Optional) Add sample content to test
+echo "import streamlit as st\nst.title('Hello from connect-to-streamlit branch')" > streamlit_app.py
+
+# Stage and commit the file
+git add streamlit_app.py
+git commit -m "Add initial streamlit_app.py"
+
+# Push the new branch to GitHub
+git push origin connect-to-streamlit
